@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${import.meta.env.VITE_REACT_BACKENDURL}`)
+      .get(`https://temp-f-app.onrender.com`)
       .then(res => {
         console.log(res.data.data);
         setBooks(res.data.data);
